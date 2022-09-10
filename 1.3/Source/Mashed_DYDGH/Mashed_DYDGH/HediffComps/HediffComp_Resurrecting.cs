@@ -30,6 +30,10 @@ namespace Mashed_DYDGH
                 {
                     ResurrectionUtility.Resurrect(Pawn);
                     HealthUtility.AdjustSeverity(Pawn, HediffDefOf.Mashed_DYDGH_Hollowing, 0.1f);
+                    if (Rand.Chance(Pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_DYDGH_Hollowing).Severity))
+                    {
+                        Pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
+                    }
                 }
                 Pawn.health.RemoveHediff(parent);
             }

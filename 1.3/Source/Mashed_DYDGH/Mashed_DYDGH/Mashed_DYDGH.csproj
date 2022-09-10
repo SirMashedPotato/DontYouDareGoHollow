@@ -59,12 +59,16 @@
   <ItemGroup>
     <Compile Include="DefModExtensions\DarksignExclusion.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\NeedDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="HediffComps\HediffComp_Darksign.cs" />
+    <Compile Include="HediffComps\HediffComp_Hollowing.cs" />
     <Compile Include="HediffComps\HediffComp_Resurrecting.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_Darksign.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_Hollowing.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_Resurrecting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtClass\Thought_Situational_Hollowing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

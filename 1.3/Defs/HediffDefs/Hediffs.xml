@@ -25,11 +25,12 @@
 	<HediffDef ParentName="Mashed_DYDGH_HediffBase">
 		<defName>Mashed_DYDGH_Hollowing</defName>
 		<label>hollowing</label>
-		<description>The side effect of reanimation by darksign mechanites. Slowly diminshes the hosts humanity, eventually leaving them an empty vessel.</description>
+		<description>The side effect of reanimation by darksign mechanites. Slowly diminishes the hosts humanity, eventually leaving them nothing more than a hollow vessel.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_DYDGH_Hollowing</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
+			<li Class="Mashed_DYDGH.HediffCompProperties_Hollowing"/>
 		</comps>
 	</HediffDef>
 	<!-- ==========[Mashed_DYDGH_Resurrecting]========== -->
