@@ -1,0 +1,4 @@
+J:\Modding\Github\DontYouDareGoHollow\1.3\Assemblies\Mashed_DYDGH.dll
+J:\Modding\Github\DontYouDareGoHollow\1.3\Source\Mashed_DYDGH\Mashed_DYDGH\obj\Debug\Mashed_DYDGH.csproj.AssemblyReference.cache
+J:\Modding\Github\DontYouDareGoHollow\1.3\Source\Mashed_DYDGH\Mashed_DYDGH\obj\Debug\Mashed_DYDGH.csproj.CoreCompileInputs.cache
+J:\Modding\Github\DontYouDareGoHollow\1.3\Source\Mashed_DYDGH\Mashed_DYDGH\obj\Debug\Mashed_DYDGH.dll

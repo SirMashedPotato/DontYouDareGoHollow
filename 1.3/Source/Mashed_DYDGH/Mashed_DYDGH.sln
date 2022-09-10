@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mashed_DYDGH", "Mashed_DYDGH\Mashed_DYDGH.csproj", "{279F8EFA-B066-4E4C-90B9-8F2FDB447779}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{279F8EFA-B066-4E4C-90B9-8F2FDB447779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279F8EFA-B066-4E4C-90B9-8F2FDB447779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279F8EFA-B066-4E4C-90B9-8F2FDB447779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279F8EFA-B066-4E4C-90B9-8F2FDB447779}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF6EA83A-9647-4D92-881F-3D2963A20253}
+	EndGlobalSection
+EndGlobal
