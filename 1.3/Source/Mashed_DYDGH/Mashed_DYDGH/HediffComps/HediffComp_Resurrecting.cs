@@ -24,13 +24,14 @@ namespace Mashed_DYDGH
         public void TickProgress(int amount)
         {
             progress += amount;
-            if (progress >= Props.ticksTillResurrection)
+            int target = Hollowing_ModSettings.ResurrectionTime;
+            if (progress >= target)
             {
                 if (Pawn.Corpse != null)
                 {
                     ResurrectionUtility.Resurrect(Pawn);
-                    HealthUtility.AdjustSeverity(Pawn, HediffDefOf.Mashed_DYDGH_Hollowing, 0.1f);
-                    if (Rand.Chance(Pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_DYDGH_Hollowing).Severity))
+                    HealthUtility.AdjustSeverity(Pawn, HediffDefOf.DYDGH_Hollowing, Hollowing_ModSettings.HollowingGain);
+                    if (Hollowing_ModSettings.ResurrectionBeserk && Rand.Chance(Pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.DYDGH_Hollowing).Severity))
                     {
                         Pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
                     }
@@ -39,6 +40,6 @@ namespace Mashed_DYDGH
             }
         }
 
-        public override string CompLabelInBracketsExtra => ((float)progress / Props.ticksTillResurrection).ToStringPercent();
+        public override string CompLabelInBracketsExtra => ((float)progress / Hollowing_ModSettings.ResurrectionTime).ToStringPercent();
     }
 }

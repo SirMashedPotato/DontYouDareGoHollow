@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_DYDGH_Hollowing]========== -->
+	<!-- ==========[DYDGH_Hollowing]========== -->
 	<ThoughtDef>
-		<defName>Mashed_DYDGH_Hollowing</defName>
+		<defName>DYDGH_Hollowing</defName>
 		<thoughtClass>Mashed_DYDGH.Thought_Situational_Hollowing</thoughtClass>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>Mashed_DYDGH_Hollowing</hediff>
+		<hediff>DYDGH_Hollowing</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>

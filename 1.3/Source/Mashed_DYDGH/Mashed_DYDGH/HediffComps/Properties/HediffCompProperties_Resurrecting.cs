@@ -8,7 +8,5 @@ namespace Mashed_DYDGH
         {
             this.compClass = typeof(HediffComp_Resurrecting);
         }
-
-        public int ticksTillResurrection = 10;
     }
 }

@@ -9,7 +9,7 @@ namespace Mashed_DYDGH
         {
             Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(def.hediff);
             float factor = hediff != null ? hediff.Severity*100f : 1f;
-            return BaseMoodOffset * factor;
+            return BaseMoodOffset * factor * Hollowing_ModSettings.MoodDebuffMult;
         }
     }
 }

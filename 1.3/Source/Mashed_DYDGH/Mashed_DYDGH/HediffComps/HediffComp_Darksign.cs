@@ -18,7 +18,7 @@ namespace Mashed_DYDGH
             Corpse corpse = Pawn.Corpse;
             if (corpse != null)
             {
-                Pawn.health.AddHediff(HediffDefOf.Mashed_DYDGH_Resurrecting);
+                Pawn.health.AddHediff(HediffDefOf.DYDGH_Resurrecting);
             }
         }
     }

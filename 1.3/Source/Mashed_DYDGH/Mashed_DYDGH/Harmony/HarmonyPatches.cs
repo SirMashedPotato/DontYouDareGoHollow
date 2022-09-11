@@ -2,7 +2,6 @@
 using Verse;
 using System.Reflection;
 using RimWorld;
-using UnityEngine;
 
 namespace Mashed_DYDGH
 {
@@ -21,15 +20,31 @@ namespace Mashed_DYDGH
     public static class PawnGenerator_GenerateInitialHediffs_Patch
     {
         [HarmonyPostfix]
-        public static void BirthsignPatch(Pawn pawn)
+        public static void DarksignPatch(Pawn pawn)
         {
-            //if (Rand.Chance(BirthSigns_ModSettings.ChanceHasSign))
-            //{
-                if (pawn.RaceProps.Humanlike && (DarksignExclusion.Get(pawn.def) == null /*|| BirthSigns_ModSettings.AllowDisabledRaces)*/))
+            if (Rand.Chance(Hollowing_ModSettings.DarksignChance))
+            {
+                if (pawn.Faction == null && !Hollowing_ModSettings.FactionlessPawns)
                 {
-                    pawn.health.AddHediff(HediffDefOf.Mashed_DYDGH_Darksign);
+                    return;
                 }
-            //}
+                if (Faction.OfPlayerSilentFail != null && pawn.Faction == Faction.OfPlayer && !Hollowing_ModSettings.PlayerPawns)
+                {
+                    return;
+                }
+                if ((Faction.OfPlayerSilentFail == null || pawn.Faction != Faction.OfPlayer) && !Hollowing_ModSettings.NonPlayerPawns)
+                {
+                    return;
+                }
+                if (pawn.def != ThingDefOf.Human && Hollowing_ModSettings.HumanPawns)
+                {
+                    return;
+                }
+                if (pawn.RaceProps.Humanlike && (DarksignExclusion.Get(pawn.def) == null))
+                {
+                    pawn.health.AddHediff(HediffDefOf.DYDGH_Darksign);
+                }
+            }
         }
     }
 
@@ -49,7 +64,7 @@ namespace Mashed_DYDGH
                 Pawn p = __instance.InnerPawn;
                 if (p != null && p.RaceProps.Humanlike)
                 {
-                    Hediff res = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_DYDGH_Resurrecting);
+                    Hediff res = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.DYDGH_Resurrecting);
                     if(res != null)
                     {
                         res.TryGetComp<HediffComp_Resurrecting>().TickProgress(1);

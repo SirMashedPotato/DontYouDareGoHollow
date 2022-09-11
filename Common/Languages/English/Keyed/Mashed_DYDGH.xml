@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<Mashed_DYDGH_HollowedTooltip>Maximum mood level: -{0}</Mashed_DYDGH_HollowedTooltip>
+	<Hollowing_ModName>Hollowing</Hollowing_ModName>
+	<Hollowing_Reset>Reset settings</Hollowing_Reset>
+	<Hollowing_Setting_PlayerPawns>Player pawns can generate with the darksign</Hollowing_Setting_PlayerPawns>
+	<Hollowing_Setting_NonPlayerPawns>Non-player pawns can generate with the darksign</Hollowing_Setting_NonPlayerPawns>
+	<Hollowing_Setting_FactionlessPawns>Factionless pawns can generate with the darksign</Hollowing_Setting_FactionlessPawns>
+	<Hollowing_Setting_HumanPawns>Only pawns of the human race can generate with a darksign</Hollowing_Setting_HumanPawns>
+	<Hollowing_Setting_DarksignChance>The chance a pawn generates with the darksign</Hollowing_Setting_DarksignChance>
+	
+	<Hollowing_Setting_HollowingGain>The amount a pawn hollows upon reanimation</Hollowing_Setting_HollowingGain>
+	<Hollowing_Setting_MoodDebuffMult>Multiplier applied to the hollowing mood debuff</Hollowing_Setting_MoodDebuffMult>
+	<Hollowing_Setting_ResurrectionBeserk>Pawns can go beserk after resurrecting</Hollowing_Setting_ResurrectionBeserk>
+	<Hollowing_Setting_ResurrectionTime>The number of ticks taken for a pawn to resurrect</Hollowing_Setting_ResurrectionTime>
 </LanguageData>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_DYDGH_HediffBase]========== -->
-	<HediffDef Abstract="True" Name="Mashed_DYDGH_HediffBase">
+	<!-- ==========[DYDGH_HediffBase]========== -->
+	<HediffDef Abstract="True" Name="DYDGH_HediffBase">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
 		<minSeverity>0</minSeverity>
@@ -9,42 +9,43 @@
 		<initialSeverity>0.01</initialSeverity>
 		<isBad>false</isBad>
 	</HediffDef>
-	<!-- ==========[Mashed_DYDGH_Darksign]========== -->
-	<HediffDef ParentName="Mashed_DYDGH_HediffBase">
-		<defName>Mashed_DYDGH_Darksign</defName>
+	<!-- ==========[DYDGH_Darksign]========== -->
+	<HediffDef ParentName="DYDGH_HediffBase">
+		<defName>DYDGH_Darksign</defName>
 		<label>darksign</label>
 		<description>A circular brand shaped scar, caused by infection with a strange mechanite plague. Those with such scars will often resurrect shortly after death, losing some of their humanity in the process.</description>
 		<descriptionHyperlinks>
-			<HediffDef>Mashed_DYDGH_Hollowing</HediffDef>
+			<HediffDef>DYDGH_Hollowing</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="Mashed_DYDGH.HediffCompProperties_Darksign"/>
 		</comps>
 	</HediffDef>
-	<!-- ==========[Mashed_DYDGH_Hollowing]========== -->
-	<HediffDef ParentName="Mashed_DYDGH_HediffBase">
-		<defName>Mashed_DYDGH_Hollowing</defName>
+	<!-- ==========[DYDGH_Hollowing]========== -->
+	<HediffDef ParentName="DYDGH_HediffBase">
+		<defName>DYDGH_Hollowing</defName>
 		<label>hollowing</label>
 		<description>The side effect of reanimation by darksign mechanites. Slowly diminishes the hosts humanity, eventually leaving them nothing more than a hollow vessel.</description>
 		<descriptionHyperlinks>
-			<HediffDef>Mashed_DYDGH_Hollowing</HediffDef>
+			<HediffDef>DYDGH_Hollowing</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="Mashed_DYDGH.HediffCompProperties_Hollowing"/>
 		</comps>
+		<stages>
+			<li/>	<!-- Needed for ThoughtWorker_Hediff -->
+		</stages>
 	</HediffDef>
-	<!-- ==========[Mashed_DYDGH_Resurrecting]========== -->
-	<HediffDef ParentName="Mashed_DYDGH_HediffBase">
-		<defName>Mashed_DYDGH_Resurrecting</defName>
+	<!-- ==========[DYDGH_Resurrecting]========== -->
+	<HediffDef ParentName="DYDGH_HediffBase">
+		<defName>DYDGH_Resurrecting</defName>
 		<label>resurrecting</label>
 		<description>Darksign mechanites resurrecting their host, and slowly whittling away at what makes them human.</description>
 		<descriptionHyperlinks>
-			<HediffDef>Mashed_DYDGH_Hollowing</HediffDef>
+			<HediffDef>DYDGH_Hollowing</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
-			<li Class="Mashed_DYDGH.HediffCompProperties_Resurrecting">
-				<ticksTillResurrection>100</ticksTillResurrection>
-			</li>
+			<li Class="Mashed_DYDGH.HediffCompProperties_Resurrecting"/>
 		</comps>
 	</HediffDef>
 </Defs>
